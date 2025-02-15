@@ -1,3 +1,3 @@
-const { loadHeaderFooter } = require("./utils.mjs");
+import { loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();

@@ -1,0 +1,21 @@
+:root {
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    /* colors */
+    --primary-color: #48B85C;
+    --secondary-color: #FF9A58 ;
+    --tertiary-color: #F94F01 ;
+    --alternate-background: #3B82EB; 
+    --light-grey: #d0d0d0;
+    --dark-grey: #303030;
+  
+    /* sizes */
+    --font-base: 18px;
+    --small-font: 0.8em;
+    --large-font: 1.2em;
+  }
+
+  .divider {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
