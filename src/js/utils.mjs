@@ -21,8 +21,9 @@ export async function loadHeaderFooter(){
     const header = document.getElementById("page-header");
     const footer = document.getElementById("page-footer");
 
-    const headerTemplate = await loadTemplate("../partials/header.html");
-    const footerTemplate = await loadTemplate("../partials/footer.html");
+    const footerTemplate = await loadTemplate("./footer.html");
+    const headerTemplate = await loadTemplate("./header.html");
+
     
     renderWithTemplate(headerTemplate,header);
     renderWithTemplate(footerTemplate, footer);

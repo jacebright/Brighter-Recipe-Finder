@@ -15,7 +15,60 @@
     --large-font: 1.2em;
   }
 
-  .divider {
-    border-bottom: 2px solid var(--primary-color);
+  .banner img {
+    max-width: 30%;
+    margin: auto;
+  } 
+
+  input {
+    max-width: 350px;
+    min-width: 70%;
+    margin: 10px;
   }
-  
+
+  @keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes close {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+dialog {
+    transition: display 2s allow-discrete,
+    overlay 2s allow-discrete;
+
+    animation: close 2s forwards;
+    &[open] {
+        animation: open 2s forwards;
+    }
+  }
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+
+}
+
+#cards section {
+    margin: auto;
+    margin-top: 5px;
+    border-color: var(--tertiary-color);
+}
+
+#search {
+    width: 80%;
+    margin: 5px;
+    align-self: center;
+}
