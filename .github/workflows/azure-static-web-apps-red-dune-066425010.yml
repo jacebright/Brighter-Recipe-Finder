@@ -46,7 +46,7 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
           my_api_key: ${{vars.RAPID_API_KEY}}
       - name: Set API Key
-          run:echo "RAPID_API_KEY=${{vars.RAPID_API_KEY }}" >> $GITHUB_ENV
+        run: echo "RAPID_API_KEY=${{vars.RAPID_API_KEY }}" >> $GITHUB_ENV
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
