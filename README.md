@@ -10,7 +10,7 @@ Input options include:
 
 
 [Software Demo Video]()
-[Live Website](https://jacebright.github.io/Grocery-Tracker/src/)
+[Live Website](https://jacebright.github.io/Brighter-Recipe-Finder/src/)
 
 # Development Environment
 
