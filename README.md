@@ -10,7 +10,7 @@ Input options include:
 
 
 [Software Demo Video]()
-[Live Website](https://red-dune-066425010.4.azurestaticapps.net/)
+[Live Website](https://jacebright.github.io/Grocery-Tracker/src/)
 
 # Development Environment
 
