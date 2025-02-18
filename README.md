@@ -6,7 +6,7 @@ This robust recipe finder allows you to input anything you want and you will get
 Input options include:
   A list of ingredients
   A single ingredient
-  A food pun you heard last week from your dad
+  A food pun you heard last week from your dad 
 
 
 [Software Demo Video]()
