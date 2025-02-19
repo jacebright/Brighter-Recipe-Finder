@@ -11,6 +11,7 @@ const recipeOptions = {
     }
 };
 
+// fetch the data from the api and then leverage it to populate the cards and modal
 export function findRecipes(foods) {
     fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=12&q=${foods}`, recipeOptions)
         .then(res => res.json())
@@ -26,8 +27,8 @@ function jsonToHTML(json) {
         // create html elements
         const card = document.createElement("div");
         card.classList.add("card");
-        // card.setAttribute("style", "width: 18rem;");
 
+        // The many divs are for the card flip effect
         const content = document.createElement("div");
         const innerDiv = document.createElement("div");
         const frontDiv = document.createElement("div");
@@ -81,6 +82,8 @@ closeButton.addEventListener("click", () => {
     dialog.close();
 })
 
+
+// helper functions to avoid displaying null or missing data
 function checkIfNull(object){
     if (object == null) {
         return "";

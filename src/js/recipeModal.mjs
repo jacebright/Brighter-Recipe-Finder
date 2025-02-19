@@ -1,6 +1,6 @@
 
 
-// fill the modal with the instructions and show it
+// fill the modal with the instructions and display it
 export function displayModal(object, dialog){
   
     const element = document.getElementById("instructions");
@@ -15,6 +15,7 @@ export function displayModal(object, dialog){
     dialog.showModal();
 }
 
+// display parsing for the top half of the dialog parsed from the returned JSON
 function instructionDisplay(instructions){
     const div = document.createElement("div");
 
@@ -31,6 +32,7 @@ function instructionDisplay(instructions){
     return div;
 }
 
+// display parsing for the second half of the dialog parsed from returned JSON
 function ingredientDisplay(ingredients){
     const div = document.createElement("div");
     ingredients.forEach(section => {
